@@ -1,0 +1,53 @@
+:root {
+    --mainBiege: #B6AD97;
+    --mainBlue: #364864;
+    --mainPurple: #3F3C69;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.mainHeader {
+    position: sticky;
+    padding-left: 0.5em;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--mainBlue);
+}
+.logo {
+    height: 10em;
+    width: auto;
+}
+.logoPic {
+    height: 8em;
+    width: auto;
+}
+.logoTitle {
+    color: white;
+    font-weight: 900;
+    font-size: large;
+}
+.navbar {
+    display: flex;
+    position: fixed;
+    right: 2em;
+    padding: 1em;
+    width: 20%;
+}
+.navList {
+    display: flex;
+    padding-top: 10%;
+    flex: auto;
+}
+.navItem {
+    list-style: none;
+    flex: auto;
+    padding: 0% 5% 0% 5%;
+}
+.navItem  a {
+    text-decoration: none;
+    color: var(--mainBiege);
+    font-weight: 600;
+}
