@@ -10,7 +10,8 @@
     scroll-behavior: smooth;
 }
 .mainHeader {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     padding-left: 0.5em;
     display: flex;
     flex-direction: row;
@@ -55,4 +56,12 @@
 .navItem a:hover, .navItem a:active {
     background-color: var(--mainPurple);
     color: black;
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
 }
