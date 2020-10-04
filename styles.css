@@ -50,4 +50,9 @@
     text-decoration: none;
     color: var(--mainBiege);
     font-weight: 600;
+    padding: 5%;
+}
+.navItem a:hover, .navItem a:active {
+    background-color: var(--mainPurple);
+    color: black;
 }
