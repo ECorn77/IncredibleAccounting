@@ -15,7 +15,7 @@
     padding-left: 0.5em;
     display: flex;
     flex-direction: row;
-    background-color: var(--mainBlue);
+    background: radial-gradient(var(--mainPurple), var(--mainBlue));
 }
 .logo {
     height: 10em;
@@ -59,9 +59,44 @@
 }
 .welcome {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
+    width: 50%;
+    margin: 0% 25%;
+}
+.welcomeHeader {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+.welcomeContent {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+.serviceGrid {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+.topLeftServiceIcon {
+    grid-area: 1/1/2/2;
+}
+.topLeftServiceList {
+    grid-area: 1/2/1/3;
+}
+.centerMidServiceIcon {
+    grid-area: 2/3/3/4;
+}
+.centerMidServiceList {
+    grid-area: 2/4/3/5;
+}
+.bottomRightServiceIcon {
+    grid-area: 3/5/4/6;
+}
+.bottomRightServiceList {
+    grid-area: 3/6/4/7;
 }
