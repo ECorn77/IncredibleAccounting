@@ -107,4 +107,9 @@
     display: flex;
     flex-direction: row;
     background-color: var(--mainPurple);
+    justify-content: space-around;
+}
+.footer a {
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
