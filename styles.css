@@ -100,6 +100,9 @@
 .bottomRightServiceList {
     grid-area: 3/6/4/7;
 }
+.topRightImage {
+    grid-area: 1/5/3/7;
+}
 .footer {
     display: flex;
     flex-direction: row;
