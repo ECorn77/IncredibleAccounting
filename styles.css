@@ -100,3 +100,8 @@
 .bottomRightServiceList {
     grid-area: 3/6/4/7;
 }
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--mainPurple);
+}
