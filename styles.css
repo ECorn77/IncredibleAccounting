@@ -2,6 +2,7 @@
     --mainBiege: #B6AD97;
     --mainBlue: #364864;
     --mainPurple: #3F3C69;
+    --darkPurple: #181540;
 }
 * {
     margin: 0;
@@ -15,7 +16,7 @@
     padding-left: 0.5em;
     display: flex;
     flex-direction: row;
-    background: radial-gradient(var(--mainPurple), var(--mainBlue));
+    background: radial-gradient(circle, var(--darkPurple), var(--mainBlue));
 }
 .logo {
     height: 10em;
@@ -56,6 +57,10 @@
 .navItem a:hover, .navItem a:active {
     background-color: var(--mainPurple);
     color: black;
+}
+.welcomeBackground {
+    background: linear-gradient(45deg, var(--mainBlue), var(--mainPurple) 50%);
+    background: linear-gradient(315deg, var(--mainPurple), var(--mainBlue) 50%);
 }
 .welcome {
     display: flex;
