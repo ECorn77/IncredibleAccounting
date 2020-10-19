@@ -112,7 +112,8 @@
 }
 .footer {
     display: grid;
-    grid-template: repeat(20%, 20%, 20%, 1fr) / repeat(10%, 1fr, 1fr, 1fr);
+    grid-template-rows: 20% 20% 20% 1fr;
+    grid-template-columns: 20% 20% 20% 1fr;
     background-color: var(--mainPurple);
     justify-content: space-around;
 }
@@ -125,11 +126,9 @@
 .footer .eMail {
     grid-area: 3/3/4/4;
 }
-.footer figcaption {
+.footer figure {
     grid-area: 3/4/4/5;
-}
-.footer img {
-    grid-area: 4/4/5/5;
+    justify-self: center;
 }
 .footer a {
     margin-left: 2rem;
@@ -147,4 +146,5 @@
 figcaption {
     color: #CFCECE;
     font-size: large;
+    text-align: center;
 }
