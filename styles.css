@@ -82,6 +82,8 @@
     line-height: 2rem;
 }
 .serviceGrid {
+    height: 100vh;
+    width: 100%;
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(6, 1fr);
     padding-top: 10rem;
@@ -109,12 +111,40 @@
     grid-area: 1/5/3/7;
 }
 .footer {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template: repeat(20%, 20%, 20%, 1fr) / repeat(10%, 1fr, 1fr, 1fr);
     background-color: var(--mainPurple);
     justify-content: space-around;
+}
+.footer .phone {
+    grid-area: 1/1/2/2;
+}
+.footer .fb {
+    grid-area: 2/2/3/3;
+}
+.footer .eMail {
+    grid-area: 3/3/4/4;
+}
+.footer figcaption {
+    grid-area: 3/4/4/5;
+}
+.footer img {
+    grid-area: 4/4/5/5;
 }
 .footer a {
     margin-left: 2rem;
     margin-right: 2rem;
+    text-decoration: none;
+    color: #CFCECE;
+}
+.footer a:hover, .footer a:active {
+    background-color: #CFCECE;
+    color: var(--mainPurple);
+}
+.footer a:visited {
+    color: #CFCECE;
+}
+figcaption {
+    color: #CFCECE;
+    font-size: large;
 }
